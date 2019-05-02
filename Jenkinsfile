@@ -12,8 +12,7 @@ pipeline {
         stage('deploy') {
             steps {
                 withCredentials([file(credentialsId: 'minikube', variable: 'KUBECONFIG')]) {
-                    sh 'echo $KUBECONFIG'
-                    sh 'cat $KUBECONFIG'
+                    sh './k8s-deploy.sh'
                 }
             }
         }
