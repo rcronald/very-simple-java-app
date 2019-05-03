@@ -51,7 +51,7 @@ task buildImage(type: com.bmuschko.gradle.docker.tasks.image.DockerBuildImage) {
   dependsOn createDockerfile
   inputDir = createDockerfile.destFile.get().asFile.parentFile
   //TODO: cambiar aqui el tag al correcto (debes usar tu usuario de Docker Hub) 
-  tags.add('domix/very-simple-java-app:' + project.version.toLowerCase())
+  tags.add('rcronald/very-simple-java-app:' + project.version.toLowerCase())
 }
 
 task pushImage(type: com.bmuschko.gradle.docker.tasks.image.DockerPushImage) {
