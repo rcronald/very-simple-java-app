@@ -10,6 +10,7 @@ pipeline {
               }
             }
         }
+        /*
         stage('deploy') {
             steps {
                 withCredentials([
@@ -22,6 +23,6 @@ pipeline {
                     //sh 'echo $KUBECONFIG'
                 }
             }
-        }
+        }*/
     }
 }
