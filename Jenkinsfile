@@ -19,8 +19,8 @@ pipeline {
                     //file(credentialsId: 'minikube_cert', variable: 'CERT'),
                     //file(credentialsId: 'minikube_key', variable: 'KEY')
                     ]) {
-                    //sh './k8s_deploy.sh'
-                    sh 'echo $KUBECONFIG'
+                    sh './k8s_deploy.sh'
+                    //sh 'echo $KUBECONFIG'
                 }
             }
         }
